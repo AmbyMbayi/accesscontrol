@@ -19,3 +19,6 @@ eg faith 2018-09-12 06:58:08
  same for every user in that sql file.
 
  naeleweka hope so. Kindly help!
+
+
+ you can try running it. just pull the project copy it and boom! no crazy configs. Im only working with Accesscontrol_model.php(model folder), accesscontrols_view.php(view folder), Accesscontrols.php(controller)
