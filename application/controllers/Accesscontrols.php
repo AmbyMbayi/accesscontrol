@@ -13,11 +13,11 @@ class Accesscontrols extends CI_Controller{
 		$start = intval($this->input->get("start"));
 		$length = intval($this->input->get("length"));
 
-		$list = $this->Accesscontrol_model->get_list();
+		$entries = $this->Accesscontrol_model->get_list();
 
 		$data = array();
 
-		foreach($list->result() as $l){
+		foreach($entries as $l){
 			$data[]= array(
 				$l->USERID,
 				$l->username,
@@ -26,17 +26,15 @@ class Accesscontrols extends CI_Controller{
 				$l->time
 			);
 		}
+
 		$output = array(
 			"draw"=> $draw,
-			"recordsTotal" => $list->num_rows(),
-			"recordsFiltered"=>$list->num_rows(),
+			"recordsTotal" => count($entries),
+			"recordsFiltered"=> count($entries),
 			"data"=>$data
 		);
 		echo json_encode($output);
 		exit();
 	}
 }
-	
-
-
  ?>

@@ -81,7 +81,7 @@
                     </div>
                 </div>
 
-        <table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <table id="table" class="table table-striped table-bordered" cellspacing="0" width="10%">
                   
             <thead>
                  <tr>
@@ -144,14 +144,12 @@
 
                         ],
                         buttons: [
-                             'pdf','print'
+                             'pdf','print','excel'
                         ],
                         
                 });
             });
           
-
-
 
 
         </script>
