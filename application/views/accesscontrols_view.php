@@ -81,14 +81,14 @@
                     </div>
                 </div>
 
-        <table id="table" class="table table-striped table-bordered" cellspacing="0" width="10%">
+        <table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">
                   
             <thead>
                  <tr>
                    
-                    <th>User Id</th>
-                    <th>User Name</th>
-                    <th>Device Name</th>
+                    <th>Name</th>
+                    <th>Title</th>
+                    <th>Department</th>
                     <th> Date</th>
                     <th> Time</th>
 
@@ -101,9 +101,9 @@
             <tfoot>
                 <tr>
                     
-                    <th>User Id</th>
-                    <th>User Name</th>
-                    <th>Device Name</th>
+                   <th>Name</th>
+                    <th>Title</th>
+                    <th>Department</th>
                     <th> Date</th>
                     <th> Time</th>
 

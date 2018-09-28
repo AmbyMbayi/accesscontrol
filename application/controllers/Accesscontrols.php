@@ -19,9 +19,9 @@ class Accesscontrols extends CI_Controller{
 
 		foreach($entries as $l){
 			$data[]= array(
-				$l->USERID,
-				$l->username,
-				$l->devicename,
+				$l->NAME,
+				$l->TITLE,
+				$l->DEPTNAME,
 				$l->date,
 				$l->time
 			);
