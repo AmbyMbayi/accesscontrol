@@ -1,10 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-//$route['accesscontrols'] = 'accesscontrols/index';
 
-$route['default_controller'] = 'accesscontrols';
 
+$route['accesscontrols/index'] = 'accesscontrols/index';
+$route['accesscontrols'] ='accesscontrols/index';
+
+$route['default_controller'] = 'users/login';
 
 
 

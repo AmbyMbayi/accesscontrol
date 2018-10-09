@@ -26,60 +26,18 @@
     <body>
          <div class="container">
 
-           
-
-                <h3>Users Details</h3>
                 <br>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title" >Filter : </h4>
-                    </div>
-                    
-                    <div class="panel-body">
-                        <form id="form-filter" class="form-horizontal">
-                           
-                                    <div class="form-group">
-                                        <label for="devicename" class="col-sm-2 control-label">Device Name</label>
-                                        <div class="col-sm-4">
-                                            <!-- <?php //echo $form_devicename; ?> -->
-                                        </div>
-                                    </div>
+                <br>
 
-                                    <div class="form-group">
-                                        <label for="username" class="col-sm-2 control-label">User Name</label>
-                                        <div class="col-sm-4">
-                                            <input type="text" class="form-control" id="username">
-                                        </div>
-                                    </div>
+                <h3>Door Accesscontrol List</h3>
+                    <button style="float: right; " type="button" id="btn-filter" class="btn btn-primary">
+                            <a style="text-decoration: none; color: white;" href="<?= site_url(); ?>accesscontrols/logout">Logout</a>
 
-                                
-                                   
-                                    <div class="form-group">
-                                        <label for="USERID" class="col-sm-2 control-label">User ID</label>
-                                        <div class="col-sm-4">
-                                            <input type="text" class="form-control" id="USERID">
-                                        </div>
-                                    </div>
-                                   
-                                     <div class="form-group">
-                                        <label for="CHECKTIME" class="col-sm-2 control-label">Date</label>
-                                        <div class="col-sm-4">
-                                            <input type="text" class="form-control" id="CHECKTIME">
-                                        </div>
-                                    </div>
-                                
-                                    
-                                    <div class="form-group">
-                                        <label for="" class="col-sm-2 control-label"></label>
-                                        <div class="col-sm-4">
-                                            <button type="button" id="btn-filter" class="btn btn-primary">Filter</button>
-                                            <button type="button" id="btn-reset" class="btn btn-default">Reset</button>
-                                        </div>
-                                    </div>
-                           
-                        </form>
-                    </div>
-                </div>
+                    </button>
+                <br>
+                
+                <br>
+                <br>
 
         <table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">
                   

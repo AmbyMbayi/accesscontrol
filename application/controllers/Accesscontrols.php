@@ -2,11 +2,17 @@
 class Accesscontrols extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
+		if(empty($this->session->userdata('id'))){
+			$this->session->set_flashdata('flash_data', 'You dont have access');
+			redirect('users/login');
+		}
 		$this->load->model("Accesscontrol_model");
 	}
 	
 	public function index(){
- 		$this->load->view("accesscontrols_view", array());
+
+
+ 		$this->load->view("accesscontrols/accesscontrols_view", array());
 	}
 	public function ajax_list(){
 		$draw = intval($this->input->get("draw"));
@@ -35,6 +41,11 @@ class Accesscontrols extends CI_Controller{
 		);
 		echo json_encode($output);
 		exit();
+	}
+	public function logout(){
+		$data=['id','username'];
+		$this->session->unset_userdata($data);
+		redirect('users/login');
 	}
 }
  ?>
